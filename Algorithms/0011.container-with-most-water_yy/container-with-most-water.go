@@ -31,3 +31,32 @@ func min(i, j int) int {
 	}
 	return j
 }
+
+func MaxAreaYy(height []int) int {
+	left, right := 0, len(height)-1
+	maxArea := 0
+	for left < right {
+		width := right - left
+		currentArea := min2(height[left], height[right]) * width
+
+		if currentArea > maxArea {
+			maxArea = currentArea
+		}
+
+		if height[left] < height[right] {
+			left++
+		} else {
+			right--
+		}
+
+	}
+	return maxArea
+}
+
+func min2(a, b int) int {
+	if a <= b {
+		return a
+	} else {
+		return b
+	}
+}

@@ -1,6 +1,7 @@
 package Problem0011
 
 import (
+	"fmt"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -46,4 +47,10 @@ func Test_Problem0011(t *testing.T) {
 
 		ast.Equal(a.one, maxArea(p.one), "输入:%v", p)
 	}
+}
+
+func Test_minArea(t *testing.T) {
+	array := []int{1, 3, 6, 4, 3, 5, 6, 7, 8, 9, 7, 5, 4, 3, 2, 1}
+	area := maxArea(array)
+	fmt.Println(area)
 }

@@ -73,3 +73,10 @@ func Test_Problem0015(t *testing.T) {
 		fmt.Println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 	}
 }
+
+func Test_mySum(t *testing.T) {
+	input := []int{-1, 0, 1, 2, 2, 2, 2, -1, -4}
+
+	result := SumaryYy3(input)
+	fmt.Println(result)
+}

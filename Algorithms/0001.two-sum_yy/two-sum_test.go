@@ -1,6 +1,7 @@
 package Problem0001
 
 import (
+	"fmt"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -48,4 +49,10 @@ func Test_OK(t *testing.T) {
 		a, p := q.a, q.p
 		ast.Equal(a.one, twoSum(p.one, p.two), "输入:%v", p)
 	}
+}
+
+func Test_main(t *testing.T) {
+	array := []int{2, 7, 11, 15}
+	i, j := twoSumTest(array, 17)
+	fmt.Println(i, j)
 }

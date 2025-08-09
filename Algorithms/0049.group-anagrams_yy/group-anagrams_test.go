@@ -51,3 +51,10 @@ func Test_Problem0049(t *testing.T) {
 		}
 	}
 }
+
+func Test_groupAnagramsCountNum(t *testing.T) {
+	array := []string{"eat", "tea", "tan", "ate", "nat", "bat"}
+	output := groupAnagramsCountNum(array)
+	fmt.Println(output)
+
+}
